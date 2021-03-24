@@ -8,11 +8,11 @@
 </head>
 
 <body>
-	<h3 id="heading">Details Form</h3>
+	<h2 id="heading">Details Form</h2>
 
 	<hr class="half"><br>
 
-	<form>
+	<form name="form">
 		<label class="labels">Name :</label>
 		<input type="text" name="name" id="name" required><br>
 
@@ -24,16 +24,17 @@
 	</form><br>
 
 	<div class="text-center">
-		<button type="submit" class="mid" onclick="add()">Submit</button>
+		<button type="submit" class="mid" form="form" onclick="add()">Submit</button>
 	</div>
 
 	<hr>
 
-	<table style="display: none;">
+	<table style="display: none;" id="info">
 		<tr class="headers">
-			<th>Name</th>
-			<th>Mob. No.</th>
-			<th>Email ID</th>
+			<th id="nameheader">Name</th>
+			<th id="numheader">Mob. No.</th>
+			<th id="emailheader">Email ID</th>
+			<th id="deleteheader"></th>
 		</tr>
 	</table>
 </body>

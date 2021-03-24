@@ -1,9 +1,10 @@
 body {
     font-family: Calibri;
     font-size: 20px;
+    background-color: #93C2F1;
 }
 
-h3 {
+h2 {
     text-align: center;
 }
 
@@ -29,6 +30,15 @@ form>* {
     margin-bottom: 20px;
 }
 
+table {
+    width: 100%;
+  }
+
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
 .labels {
     grid-column: 2 / 3;
 }
@@ -37,15 +47,42 @@ form>* {
     grid-column: 3 / 4;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .mid {
     width: 30%;
-    background-color: #4CAF50;
+    background-color: #F193C2;
     padding: 10px 16px;
     text-align: center;
     font-size: 26px;
     margin: 4px 2px;
 }
 
-.text-center {
-    text-align: center;
+#delete{
+    background-color: #C2F193;
+
+}
+
+
+
+table{
+    grid-template-columns: auto auto auto auto;
+}
+
+#nameheader{
+    grid-column: 1 / 2;
+}
+
+#numheader{
+    grid-column: 2 / 3;
+}
+
+#emailheader{
+    grid-column: 3 / 4;
+}
+
+#deleteheader{
+    grid-column: 4 / 5;
 }
