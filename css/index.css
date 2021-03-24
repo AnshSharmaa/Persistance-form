@@ -12,10 +12,6 @@ hr.half {
     width: 50%;
 }
 
-label {
-    margin-right: 15px;
-}
-
 input {
     justify-content: space-between;
 }
@@ -32,11 +28,16 @@ form>* {
 
 table {
     width: 100%;
+    grid-template-columns: auto auto auto auto;
   }
 
 th{
     border: 1px solid black;
     border-collapse: collapse;
+
+}
+td{
+    text-align: center;
 }
 
 .labels {
@@ -63,26 +64,4 @@ th{
 #delete{
     background-color: #C2F193;
 
-}
-
-
-
-table{
-    grid-template-columns: auto auto auto auto;
-}
-
-#nameheader{
-    grid-column: 1 / 2;
-}
-
-#numheader{
-    grid-column: 2 / 3;
-}
-
-#emailheader{
-    grid-column: 3 / 4;
-}
-
-#deleteheader{
-    grid-column: 4 / 5;
 }
