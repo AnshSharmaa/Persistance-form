@@ -1,0 +1,51 @@
+body {
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+hr.half {
+    width: 50%;
+}
+
+label {
+    margin-right: 15px;
+}
+
+input {
+    justify-content: space-between;
+}
+
+form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+form>* {
+    margin-bottom: 20px;
+}
+
+.labels {
+    grid-column: 2 / 3;
+}
+
+.inputs {
+    grid-column: 3 / 4;
+}
+
+.mid {
+    width: 30%;
+    background-color: #4CAF50;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 26px;
+    margin: 4px 2px;
+}
+
+.text-center {
+    text-align: center;
+}

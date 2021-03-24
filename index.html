@@ -2,35 +2,40 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
 
 </head>
 
 <body>
-    <h3 id="heading">Details Form</h3>
-    <hr>
-    <form>
-        <label>Name :</label>
-        <input type="text" name="name" id="name" required>
+	<h3 id="heading">Details Form</h3>
 
-        <label>Mob. No. :</label>
-        <input type="number" name="num" id="num" required>
+	<hr class="half"><br>
 
-        <label>Email ID : </label>
-        <input type="email" name="email" id="email" required>
+	<form>
+		<label class="labels">Name :</label>
+		<input type="text" name="name" id="name" required><br>
 
-        <input type="submit" value="Submit">
-    </form>
-    <hr>
+		<label class="labels">Mob. No. :</label>
+		<input type="number" name="number" id="num" required><br>
 
-    <table style="display: none;">
-        <tr>
-          <th>Name</th>
-          <th>Mob. No.</th> 
-          <th>Email ID</th>
-        </tr>
-      </table>
+		<label class="labels">Email ID : </label>
+		<input type="email" name="email" id="email" required><br>
+	</form><br>
+
+	<div class="text-center">
+		<button type="submit" class="mid" onclick="add()">Submit</button>
+	</div>
+
+	<hr>
+
+	<table style="display: none;">
+		<tr class="headers">
+			<th>Name</th>
+			<th>Mob. No.</th>
+			<th>Email ID</th>
+		</tr>
+	</table>
 </body>
 
 </html>
